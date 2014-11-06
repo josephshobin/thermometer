@@ -39,7 +39,7 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/CommBank/thermometer/tree/bf319cc1bb6720813d1869973d9650574195af35//core/src/main/scala/au/com/cba/omnia/thermometer/fact/PathFact.scala" target="_blank">PathFact.scala</a></dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/CommBank/thermometer/tree/5525db8977f9f8fe990268c2b70cc29f05b17c05//core/src/main/scala/au/com/cba/omnia/thermometer/fact/PathFact.scala" target="_blank">PathFact.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="org.specs2.matcher.ThrownExpectations">ThrownExpectations</span>, <span class="extype" name="org.specs2.matcher.StandardMatchResults">StandardMatchResults</span>, <span class="extype" name="org.specs2.execute.StandardResults">StandardResults</span>, <span class="extype" name="org.specs2.matcher.Expectations">Expectations</span>, <span class="extype" name="org.specs2.matcher.CanBeEqual">CanBeEqual</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
@@ -244,6 +244,19 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CanBeEqual</dd></dl></div>
+    </li><li name="au.com.cba.omnia.thermometer.fact.PathFactoids#checkEquality" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="checkEquality[A,B](actual:List[A],expected:List[A],adapter:A=&gt;B,koMessage:String):org.specs2.execute.Result"></a>
+      <a id="checkEquality[A,B](List[A],List[A],(A)⇒B,String):Result"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">checkEquality</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span name="actual">actual: <span class="extype" name="scala.List">List</span>[<span class="extype" name="au.com.cba.omnia.thermometer.fact.PathFactoids.checkEquality.A">A</span>]</span>, <span name="expected">expected: <span class="extype" name="scala.List">List</span>[<span class="extype" name="au.com.cba.omnia.thermometer.fact.PathFactoids.checkEquality.A">A</span>]</span>, <span name="adapter">adapter: (<span class="extype" name="au.com.cba.omnia.thermometer.fact.PathFactoids.checkEquality.A">A</span>) ⇒ <span class="extype" name="au.com.cba.omnia.thermometer.fact.PathFactoids.checkEquality.B">B</span></span>, <span name="koMessage">koMessage: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="org.specs2.execute.Result">Result</span></span>
+      </span>
+      </h4>
+      
     </li><li name="org.specs2.matcher.Expectations#checkFailure" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="checkFailure[T&lt;:&lt;?&gt;](m:&lt;?&gt;):org.specs2.matcher.MatchResult[T]"></a>
       <a id="checkFailure[T](MatchResult[T]):MatchResult[T]"></a>
@@ -751,46 +764,47 @@
       </h4>
       
     </li><li name="au.com.cba.omnia.thermometer.fact.PathFactoids#records" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="records[A](actualReader:au.com.cba.omnia.thermometer.core.ThermometerRecordReader[A],expectedReader:au.com.cba.omnia.thermometer.core.ThermometerRecordReader[A],expectedPath:org.apache.hadoop.fs.Path):au.com.cba.omnia.thermometer.fact.PathFactoid"></a>
-      <a id="records[A](ThermometerRecordReader[A],ThermometerRecordReader[A],Path):PathFactoid"></a>
+      <a id="records[A,B](actualReader:au.com.cba.omnia.thermometer.core.ThermometerRecordReader[A],expectedReader:au.com.cba.omnia.thermometer.core.ThermometerRecordReader[A],expectedPath:org.apache.hadoop.fs.Path,adapter:A=&gt;B):au.com.cba.omnia.thermometer.fact.PathFactoid"></a>
+      <a id="records[A,B](ThermometerRecordReader[A],ThermometerRecordReader[A],Path,(A)⇒B):PathFactoid"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">records</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="actualReader">actualReader: <a href="../core/ThermometerRecordReader.html" class="extype" name="au.com.cba.omnia.thermometer.core.ThermometerRecordReader">ThermometerRecordReader</a>[<span class="extype" name="au.com.cba.omnia.thermometer.fact.PathFactoids.records.A">A</span>]</span>, <span name="expectedReader">expectedReader: <a href="../core/ThermometerRecordReader.html" class="extype" name="au.com.cba.omnia.thermometer.core.ThermometerRecordReader">ThermometerRecordReader</a>[<span class="extype" name="au.com.cba.omnia.thermometer.fact.PathFactoids.records.A">A</span>]</span>, <span name="expectedPath">expectedPath: <span class="extype" name="org.apache.hadoop.fs.Path">Path</span></span>)</span><span class="result">: <a href="PathFactoid.html" class="extype" name="au.com.cba.omnia.thermometer.fact.PathFactoid">PathFactoid</a></span>
+        <span class="name">records</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span name="actualReader">actualReader: <a href="../core/ThermometerRecordReader.html" class="extype" name="au.com.cba.omnia.thermometer.core.ThermometerRecordReader">ThermometerRecordReader</a>[<span class="extype" name="au.com.cba.omnia.thermometer.fact.PathFactoids.records.A">A</span>]</span>, <span name="expectedReader">expectedReader: <a href="../core/ThermometerRecordReader.html" class="extype" name="au.com.cba.omnia.thermometer.core.ThermometerRecordReader">ThermometerRecordReader</a>[<span class="extype" name="au.com.cba.omnia.thermometer.fact.PathFactoids.records.A">A</span>]</span>, <span name="expectedPath">expectedPath: <span class="extype" name="org.apache.hadoop.fs.Path">Path</span></span>, <span name="adapter">adapter: (<span class="extype" name="au.com.cba.omnia.thermometer.fact.PathFactoids.records.A">A</span>) ⇒ <span class="extype" name="au.com.cba.omnia.thermometer.fact.PathFactoids.records.B">B</span> = <span class="symbol">identity[A]</span></span>)</span><span class="result">: <a href="PathFactoid.html" class="extype" name="au.com.cba.omnia.thermometer.fact.PathFactoid">PathFactoid</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Create a factoid for comparing records loaded from thermometer record readers for the fact path and an expected path.</p><div class="fullcomment"><div class="comment cmt"><p>Create a factoid for comparing records loaded from thermometer record readers for the fact path and an expected path.</p><p>This allows you to use different file formats for the actual output of the job and the
 expected output of the job. Eg: Parquet files for the job output, but a readable CSV for the reference data.
 </p></div><dl class="paramcmts block"><dt class="param">actualReader</dt><dd class="cmt"><p>reads records from the fact's path, the paths should be the actual output of the job.
        If fact path's are relative it is to the job's working directory.</p></dd><dt class="param">expectedReader</dt><dd class="cmt"><p>reads records from the expectedPath.</p></dd><dt class="param">expectedPath</dt><dd class="cmt"><p>path that points to the reference data. If path is relative it is to the job's working
-       directory.
+       directory.</p></dd><dt class="param">adapter</dt><dd class="cmt"><p>function adapts each of record from the expected as well as actual record set before the records
+       are compared. If not specified, the identity function is used.
 </p></dd></dl></div>
     </li><li name="au.com.cba.omnia.thermometer.fact.PathFactoids#records" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="records[A](reader:au.com.cba.omnia.thermometer.core.ThermometerRecordReader[A],data:List[A]):au.com.cba.omnia.thermometer.fact.PathFactoid"></a>
-      <a id="records[A](ThermometerRecordReader[A],List[A]):PathFactoid"></a>
+      <a id="records[A,B](reader:au.com.cba.omnia.thermometer.core.ThermometerRecordReader[A],data:List[A],adapter:A=&gt;B):au.com.cba.omnia.thermometer.fact.PathFactoid"></a>
+      <a id="records[A,B](ThermometerRecordReader[A],List[A],(A)⇒B):PathFactoid"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">records</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="reader">reader: <a href="../core/ThermometerRecordReader.html" class="extype" name="au.com.cba.omnia.thermometer.core.ThermometerRecordReader">ThermometerRecordReader</a>[<span class="extype" name="au.com.cba.omnia.thermometer.fact.PathFactoids.records.A">A</span>]</span>, <span name="data">data: <span class="extype" name="scala.List">List</span>[<span class="extype" name="au.com.cba.omnia.thermometer.fact.PathFactoids.records.A">A</span>]</span>)</span><span class="result">: <a href="PathFactoid.html" class="extype" name="au.com.cba.omnia.thermometer.fact.PathFactoid">PathFactoid</a></span>
+        <span class="name">records</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span name="reader">reader: <a href="../core/ThermometerRecordReader.html" class="extype" name="au.com.cba.omnia.thermometer.core.ThermometerRecordReader">ThermometerRecordReader</a>[<span class="extype" name="au.com.cba.omnia.thermometer.fact.PathFactoids.records.A">A</span>]</span>, <span name="data">data: <span class="extype" name="scala.List">List</span>[<span class="extype" name="au.com.cba.omnia.thermometer.fact.PathFactoids.records.A">A</span>]</span>, <span name="adapter">adapter: (<span class="extype" name="au.com.cba.omnia.thermometer.fact.PathFactoids.records.A">A</span>) ⇒ <span class="extype" name="au.com.cba.omnia.thermometer.fact.PathFactoids.records.B">B</span> = <span class="symbol">identity[A]</span></span>)</span><span class="result">: <a href="PathFactoid.html" class="extype" name="au.com.cba.omnia.thermometer.fact.PathFactoid">PathFactoid</a></span>
       </span>
       </h4>
       
     </li><li name="au.com.cba.omnia.thermometer.fact.PathFactoids#recordsByDirectory" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="recordsByDirectory[A](actualReader:au.com.cba.omnia.thermometer.core.ThermometerRecordReader[A],expectedReader:au.com.cba.omnia.thermometer.core.ThermometerRecordReader[A],expectedPath:org.apache.hadoop.fs.Path):au.com.cba.omnia.thermometer.fact.PathFactoid"></a>
-      <a id="recordsByDirectory[A](ThermometerRecordReader[A],ThermometerRecordReader[A],Path):PathFactoid"></a>
+      <a id="recordsByDirectory[A,B](actualReader:au.com.cba.omnia.thermometer.core.ThermometerRecordReader[A],expectedReader:au.com.cba.omnia.thermometer.core.ThermometerRecordReader[A],expectedPath:org.apache.hadoop.fs.Path,adapter:A=&gt;B):au.com.cba.omnia.thermometer.fact.PathFactoid"></a>
+      <a id="recordsByDirectory[A,B](ThermometerRecordReader[A],ThermometerRecordReader[A],Path,(A)⇒B):PathFactoid"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">recordsByDirectory</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="actualReader">actualReader: <a href="../core/ThermometerRecordReader.html" class="extype" name="au.com.cba.omnia.thermometer.core.ThermometerRecordReader">ThermometerRecordReader</a>[<span class="extype" name="au.com.cba.omnia.thermometer.fact.PathFactoids.recordsByDirectory.A">A</span>]</span>, <span name="expectedReader">expectedReader: <a href="../core/ThermometerRecordReader.html" class="extype" name="au.com.cba.omnia.thermometer.core.ThermometerRecordReader">ThermometerRecordReader</a>[<span class="extype" name="au.com.cba.omnia.thermometer.fact.PathFactoids.recordsByDirectory.A">A</span>]</span>, <span name="expectedPath">expectedPath: <span class="extype" name="org.apache.hadoop.fs.Path">Path</span></span>)</span><span class="result">: <a href="PathFactoid.html" class="extype" name="au.com.cba.omnia.thermometer.fact.PathFactoid">PathFactoid</a></span>
+        <span class="name">recordsByDirectory</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span name="actualReader">actualReader: <a href="../core/ThermometerRecordReader.html" class="extype" name="au.com.cba.omnia.thermometer.core.ThermometerRecordReader">ThermometerRecordReader</a>[<span class="extype" name="au.com.cba.omnia.thermometer.fact.PathFactoids.recordsByDirectory.A">A</span>]</span>, <span name="expectedReader">expectedReader: <a href="../core/ThermometerRecordReader.html" class="extype" name="au.com.cba.omnia.thermometer.core.ThermometerRecordReader">ThermometerRecordReader</a>[<span class="extype" name="au.com.cba.omnia.thermometer.fact.PathFactoids.recordsByDirectory.A">A</span>]</span>, <span name="expectedPath">expectedPath: <span class="extype" name="org.apache.hadoop.fs.Path">Path</span></span>, <span name="adapter">adapter: (<span class="extype" name="au.com.cba.omnia.thermometer.fact.PathFactoids.recordsByDirectory.A">A</span>) ⇒ <span class="extype" name="au.com.cba.omnia.thermometer.fact.PathFactoids.recordsByDirectory.B">B</span> = <span class="symbol">identity[A]</span></span>)</span><span class="result">: <a href="PathFactoid.html" class="extype" name="au.com.cba.omnia.thermometer.fact.PathFactoid">PathFactoid</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Create a factoid for comparing records loaded from thermometer record readers for the tree of directories beneath
@@ -799,7 +813,8 @@ the fact path and the tree of directories of the expected path. The directory st
 same and the records loaded from each subdirectory must be the same.
 </p></div><dl class="paramcmts block"><dt class="param">actualReader</dt><dd class="cmt"><p>reads records from the fact's path, the path should be a root directory of actual output of
        the job. If fact path's are relative it is to the job's working directory.</p></dd><dt class="param">expectedReader</dt><dd class="cmt"><p>reads records from the expectedPath.</p></dd><dt class="param">expectedPath</dt><dd class="cmt"><p>path that points to the root directory of the reference data. If path is relative it is to the
-       job's working directory.
+       job's working directory.</p></dd><dt class="param">adapter</dt><dd class="cmt"><p>function adapts each of record from the expected as well as actual record set before the records
+       are compared. If not specified, the identity function is used.
 </p></dd></dl></div>
     </li><li name="org.specs2.matcher.ThrownExpectations#skipped" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="skipped(s:org.specs2.execute.Skipped):org.specs2.execute.Skipped"></a>

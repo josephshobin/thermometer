@@ -39,7 +39,7 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Adds testing support for scalding execution monad by setting up a test <code>Config</code> and <code>Mode</code>.</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="au.com.cba.omnia.thermometer.tools.ExecutionSupport">ExecutionSupport</a> with <span class="extype" name="org.specs2.Specification">Specification</span></dd><dt>Source</dt><dd><a href="https://github.com/CommBank/thermometer/tree/bf319cc1bb6720813d1869973d9650574195af35//core/src/main/scala/au/com/cba/omnia/thermometer/tools/ExecutionSupport.scala" target="_blank">ExecutionSupport.scala</a></dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Adds testing support for scalding execution monad by setting up a test <code>Config</code> and <code>Mode</code>.</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="au.com.cba.omnia.thermometer.tools.ExecutionSupport">ExecutionSupport</a> with <span class="extype" name="org.specs2.Specification">Specification</span></dd><dt>Source</dt><dd><a href="https://github.com/CommBank/thermometer/tree/5525db8977f9f8fe990268c2b70cc29f05b17c05//core/src/main/scala/au/com/cba/omnia/thermometer/tools/ExecutionSupport.scala" target="_blank">ExecutionSupport.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><a href="HadoopSupport.html" class="extype" name="au.com.cba.omnia.thermometer.tools.HadoopSupport">HadoopSupport</a>, <span class="extype" name="com.twitter.scalding.FieldConversions">FieldConversions</span>, <span class="extype" name="com.twitter.scalding.LowPriorityFieldConversions">LowPriorityFieldConversions</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
@@ -154,7 +154,7 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="com.twitter.scalding.LowPriorityFieldConversions#anyToFieldArg" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="anyToFieldArg(f:Any):Comparable[_]"></a>
+      <a id="anyToFieldArg(f:&lt;?&gt;):Comparable[_]"></a>
       <a id="anyToFieldArg(Any):Comparable[_]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -180,7 +180,7 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="com.twitter.scalding.FieldConversions#asList" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="asList(f:cascading.tuple.Fields):List[Comparable[_]]"></a>
+      <a id="asList(f:&lt;?&gt;):List[Comparable[_]]"></a>
       <a id="asList(Fields):List[Comparable[_]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -193,7 +193,7 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>FieldConversions</dd></dl></div>
     </li><li name="com.twitter.scalding.FieldConversions#asSet" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="asSet(f:cascading.tuple.Fields):Set[Comparable[_]]"></a>
+      <a id="asSet(f:&lt;?&gt;):Set[Comparable[_]]"></a>
       <a id="asSet(Fields):Set[Comparable[_]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -225,7 +225,7 @@
               
         </dd></dl></div>
     </li><li name="com.twitter.scalding.FieldConversions#defaultMode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="defaultMode(fromFields:cascading.tuple.Fields,toFields:cascading.tuple.Fields):cascading.tuple.Fields"></a>
+      <a id="defaultMode(fromFields:&lt;?&gt;,toFields:&lt;?&gt;):cascading.tuple.Fields"></a>
       <a id="defaultMode(Fields,Fields):Fields"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -251,7 +251,7 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="HadoopSupport.html" class="extype" name="au.com.cba.omnia.thermometer.tools.HadoopSupport">HadoopSupport</a></dd></dl></div>
     </li><li name="com.twitter.scalding.FieldConversions#ensureUniqueFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="ensureUniqueFields(left:cascading.tuple.Fields,right:cascading.tuple.Fields,rightPipe:cascading.pipe.Pipe):(cascading.tuple.Fields,cascading.pipe.Pipe)"></a>
+      <a id="ensureUniqueFields(left:&lt;?&gt;,right:&lt;?&gt;,rightPipe:&lt;?&gt;):(cascading.tuple.Fields,cascading.pipe.Pipe)"></a>
       <a id="ensureUniqueFields(Fields,Fields,Pipe):(Fields,Pipe)"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -468,7 +468,7 @@ Takes an optional map of arguments.
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="com.twitter.scalding.FieldConversions#getField" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="getField(f:cascading.tuple.Fields,idx:Int):cascading.tuple.Fields"></a>
+      <a id="getField(f:&lt;?&gt;,idx:&lt;?&gt;):cascading.tuple.Fields"></a>
       <a id="getField(Fields,Int):Fields"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -481,7 +481,7 @@ Takes an optional map of arguments.
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>FieldConversions</dd></dl></div>
     </li><li name="com.twitter.scalding.FieldConversions#hasInts" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="hasInts(f:cascading.tuple.Fields):Boolean"></a>
+      <a id="hasInts(f:&lt;?&gt;):Boolean"></a>
       <a id="hasInts(Fields):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -598,7 +598,7 @@ Takes an optional map of arguments.
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="com.twitter.scalding.FieldConversions#newSymbol" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="newSymbol(avoid:Set[Symbol],guess:Symbol,trial:Int):Symbol"></a>
+      <a id="newSymbol(avoid:&lt;?&gt;,guess:&lt;?&gt;,trial:&lt;?&gt;):Symbol"></a>
       <a id="newSymbol(Set[Symbol],Symbol,Int):Symbol"></a>
       <h4 class="signature">
       <span class="modifier_kind">
