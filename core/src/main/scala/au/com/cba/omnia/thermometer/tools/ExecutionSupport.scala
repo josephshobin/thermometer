@@ -14,7 +14,7 @@
 
 package au.com.cba.omnia.thermometer.tools
 
-import scala.util.Try
+import scala.util.{Try, Success, Failure}
 
 import scalaz._, Scalaz._
 
@@ -23,7 +23,7 @@ import com.twitter.scalding._
 import org.apache.hadoop.mapred.JobConf
 
 import org.specs2.Specification
-import org.specs2.execute.Result
+import org.specs2.execute.{Result, Success => SpecsSuccess, Failure => SpecsFailure, FailureException}
 import org.specs2.execute.StandardResults.success
 
 import au.com.cba.omnia.thermometer.context.Context
@@ -55,7 +55,11 @@ trait ExecutionSupport extends FieldConversions with HadoopSupport { self: Speci
     * Takes an optional map of arguments.
     */
   def executesOk(execution: Execution[_], args: Map[String, List[String]] = Map.empty): Result = {
-    execute(execution, args) must beSuccessfulTry
+    execute(execution, args) match {
+      case Success(x) => SpecsSuccess()
+      case Failure(t) =>
+        throw FailureException(SpecsFailure(s"Execution failed: ${t.toString}", "", t.getStackTrace.toList))
+    }
   }
 
   /**
@@ -64,9 +68,11 @@ trait ExecutionSupport extends FieldConversions with HadoopSupport { self: Speci
     * Takes an optional map of arguments.
     */
   def executesSuccessfully[T](execution: Execution[T], args: Map[String, List[String]] = Map.empty): T = {
-    val r = execute(execution, args)
-    r must beSuccessfulTry
-    r.get
+    execute(execution, args) match {
+      case Success(x) => x
+      case Failure(t) =>
+        throw FailureException(SpecsFailure(s"Execution failed: ${t.toString}", "", t.getStackTrace.toList))
+    }
   }
 
 
