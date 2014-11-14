@@ -32,4 +32,8 @@
       <name>mapreduce.framework.name</name>
       <value>yarn</value>
   </property>
+  <property>
+      <name>hive.metastore.ds.retry.attempts</name>
+      <value>0</value>
+  </property>
 </configuration>

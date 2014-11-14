@@ -36,4 +36,5 @@ trait HiveSupport extends HadoopSupport {
   System.setProperty("derby.system.home", derbyHome)
   // Export the derby db file location so it is different for each test.
   System.setProperty("javax.jdo.option.ConnectionURL", s"jdbc:derby:;databaseName=$hiveDb;create=true")
+  System.setProperty("hive.metastore.ds.retry.attempts", "0")
 }
