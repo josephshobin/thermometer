@@ -53,13 +53,13 @@ To verify some pipeline, you add a withFacts call. For example:
 
 ```
   def pipeline =
-    ThermometerTestSource(List("hello", "world"))
+    ThermometerSource(List("hello", "world"))
       .map(c => (c, "really" + c + "!"))
       .write(TypedPsv[(String, String)]("output"))
       .withFacts(
-        "cars" </> "_ERROR"      ==> missing
-      , "cars" </> "_SUCCESS"    ==> exists
-      , "cars" </> "part-00000"  ==> (exists, count(data.size))
+        "output" </> "_ERROR"      ==> missing
+      , "output" </> "_SUCCESS"    ==> exists
+      , "output" </> "part-00000"  ==> (exists, count(2))  /* 2 items */
       )
 ```
 
@@ -81,7 +81,7 @@ To verify some pipeline, you add a withExpectations call. For example:
 
 ```
   def pipeline =
-    ThermometerTestSource(List("hello", "world"))
+    ThermometerSource(List("hello", "world"))
       .map(c => (c, "really" + c + "!"))
       .write(TypedPsv[(String, String)]("output"))
       .withExpectations(context => {
