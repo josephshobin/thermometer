@@ -28,7 +28,7 @@ trait HiveSupport extends HadoopSupport {
   lazy val hiveWarehouse: String = s"$hiveDir/warehouse"
   lazy val derbyHome: String     = s"$hiveDir/derby"
   lazy val hiveConf: HiveConf    = new HiveConf <| (conf => {
-    hiveConf.setVar(METASTOREWAREHOUSE, hiveWarehouse)
+    conf.setVar(METASTOREWAREHOUSE, hiveWarehouse)
   })
 
   // Export the warehouse path so it gets picked up when a new hive conf is instantiated somehwere else.
