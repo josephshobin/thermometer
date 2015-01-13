@@ -39,9 +39,9 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/CommBank/thermometer/tree/776c9a5ab896bcca6f892c5715e9b53974a1e93b//core/src/main/scala/au/com/cba/omnia/thermometer/fact/PathFact.scala" target="_blank">PathFact.scala</a></dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/CommBank/thermometer/tree/b47d6dde2fbf30fd01bcdfcb28d3efa673fdd6a1//core/src/main/scala/au/com/cba/omnia/thermometer/fact/PathFact.scala" target="_blank">PathFact.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="org.specs2.matcher.ThrownExpectations">ThrownExpectations</span>, <span class="extype" name="org.specs2.matcher.StandardMatchResults">StandardMatchResults</span>, <span class="extype" name="org.specs2.execute.StandardResults">StandardResults</span>, <span class="extype" name="org.specs2.matcher.Expectations">Expectations</span>, <span class="extype" name="org.specs2.matcher.CanBeEqual">CanBeEqual</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="org.specs2.matcher.ThrownExpectations">ThrownExpectations</span>, <span class="extype" name="org.specs2.matcher.StandardMatchResults">StandardMatchResults</span>, <span class="extype" name="org.specs2.execute.StandardResults">StandardResults</span>, <span class="extype" name="org.specs2.matcher.Expectations">Expectations</span>, <span class="extype" name="org.specs2.matcher.MatchResultStackTrace">MatchResultStackTrace</span>, <span class="extype" name="org.specs2.matcher.CanBeEqual">CanBeEqual</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -59,7 +59,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="au.com.cba.omnia.thermometer.fact.PathFactoids"><span>PathFactoids</span></li><li class="in" name="org.specs2.matcher.ThrownExpectations"><span>ThrownExpectations</span></li><li class="in" name="org.specs2.matcher.StandardMatchResults"><span>StandardMatchResults</span></li><li class="in" name="org.specs2.execute.StandardResults"><span>StandardResults</span></li><li class="in" name="org.specs2.matcher.Expectations"><span>Expectations</span></li><li class="in" name="org.specs2.matcher.CanBeEqual"><span>CanBeEqual</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="au.com.cba.omnia.thermometer.fact.PathFactoids"><span>PathFactoids</span></li><li class="in" name="org.specs2.matcher.ThrownExpectations"><span>ThrownExpectations</span></li><li class="in" name="org.specs2.matcher.StandardMatchResults"><span>StandardMatchResults</span></li><li class="in" name="org.specs2.execute.StandardResults"><span>StandardResults</span></li><li class="in" name="org.specs2.matcher.Expectations"><span>Expectations</span></li><li class="in" name="org.specs2.matcher.MatchResultStackTrace"><span>MatchResultStackTrace</span></li><li class="in" name="org.specs2.matcher.CanBeEqual"><span>CanBeEqual</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -284,15 +284,15 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd>ThrownExpectations → Expectations</dd></dl></div>
     </li><li name="org.specs2.matcher.ThrownExpectations#checkResultFailure" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="checkResultFailure(r:org.specs2.execute.Result):org.specs2.execute.Result"></a>
-      <a id="checkResultFailure(Result):Result"></a>
+      <a id="checkResultFailure(result:=&gt;org.specs2.execute.Result):org.specs2.execute.Result"></a>
+      <a id="checkResultFailure(⇒Result):Result"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">checkResultFailure</span><span class="params">(<span name="r">r: <span class="extype" name="org.specs2.execute.Result">Result</span></span>)</span><span class="result">: <span class="extype" name="org.specs2.execute.Result">Result</span></span>
+        <span class="name">checkResultFailure</span><span class="params">(<span name="result">result: ⇒ <span class="extype" name="org.specs2.execute.Result">Result</span></span>)</span><span class="result">: <span class="extype" name="org.specs2.execute.Result">Result</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd>ThrownExpectations → Expectations</dd></dl></div>
@@ -569,28 +569,28 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="org.specs2.matcher.StandardMatchResults#ko" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="ko(m:String):org.specs2.matcher.MatchFailure[None.type]"></a>
-      <a id="ko(String):MatchFailure[None.type]"></a>
+      <a id="ko(m:String):org.specs2.matcher.MatchResult[Any]"></a>
+      <a id="ko(String):MatchResult[Any]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ko</span><span class="params">(<span name="m">m: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="org.specs2.matcher.MatchFailure">MatchFailure</span>[<span class="extype" name="scala.None">None</span>.type]</span>
+        <span class="name">ko</span><span class="params">(<span name="m">m: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="org.specs2.matcher.MatchResult">MatchResult</span>[<span class="extype" name="scala.Any">Any</span>]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>StandardMatchResults</dd></dl></div>
     </li><li name="org.specs2.matcher.ThrownExpectations#ko" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="ko:org.specs2.matcher.MatchFailure[None.type]"></a>
-      <a id="ko:MatchFailure[None.type]"></a>
+      <a id="ko:org.specs2.matcher.MatchResult[Any]"></a>
+      <a id="ko:MatchResult[Any]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">lazy val</span>
       </span>
       <span class="symbol">
-        <span class="name">ko</span><span class="result">: <span class="extype" name="org.specs2.matcher.MatchFailure">MatchFailure</span>[<span class="extype" name="scala.None">None</span>.type]</span>
+        <span class="name">ko</span><span class="result">: <span class="extype" name="org.specs2.matcher.MatchResult">MatchResult</span>[<span class="extype" name="scala.Any">Any</span>]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>ThrownExpectations → StandardMatchResults</dd></dl></div>
@@ -673,33 +673,33 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="org.specs2.matcher.StandardMatchResults#ok" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="ok(m:String):org.specs2.matcher.MatchSuccess[None.type]"></a>
-      <a id="ok(String):MatchSuccess[None.type]"></a>
+      <a id="ok(m:String):org.specs2.matcher.MatchResult[Any]"></a>
+      <a id="ok(String):MatchResult[Any]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ok</span><span class="params">(<span name="m">m: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="org.specs2.matcher.MatchSuccess">MatchSuccess</span>[<span class="extype" name="scala.None">None</span>.type]</span>
+        <span class="name">ok</span><span class="params">(<span name="m">m: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="org.specs2.matcher.MatchResult">MatchResult</span>[<span class="extype" name="scala.Any">Any</span>]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>StandardMatchResults</dd></dl></div>
     </li><li name="org.specs2.matcher.StandardMatchResults#ok" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="ok:org.specs2.matcher.MatchSuccess[None.type]"></a>
-      <a id="ok:MatchSuccess[None.type]"></a>
+      <a id="ok:org.specs2.matcher.MatchResult[Any]"></a>
+      <a id="ok:MatchResult[Any]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">lazy val</span>
       </span>
       <span class="symbol">
-        <span class="name">ok</span><span class="result">: <span class="extype" name="org.specs2.matcher.MatchSuccess">MatchSuccess</span>[<span class="extype" name="scala.None">None</span>.type]</span>
+        <span class="name">ok</span><span class="result">: <span class="extype" name="org.specs2.matcher.MatchResult">MatchResult</span>[<span class="extype" name="scala.Any">Any</span>]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>StandardMatchResults</dd></dl></div>
     </li><li name="org.specs2.matcher.ThrownExpectations#pending" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="pending(s:org.specs2.execute.Pending):org.specs2.execute.Pending"></a>
+      <a id="pending(p:org.specs2.execute.Pending):org.specs2.execute.Pending"></a>
       <a id="pending(Pending):Pending"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -707,7 +707,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">pending</span><span class="params">(<span name="s">s: <span class="extype" name="org.specs2.execute.Pending">Pending</span></span>)</span><span class="result">: <span class="extype" name="org.specs2.execute.Pending">Pending</span></span>
+        <span class="name">pending</span><span class="params">(<span name="p">p: <span class="extype" name="org.specs2.execute.Pending">Pending</span></span>)</span><span class="result">: <span class="extype" name="org.specs2.execute.Pending">Pending</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd>ThrownExpectations</dd></dl></div>
@@ -867,6 +867,19 @@ same and the records loaded from each subdirectory must be the same.
        the job. If fact path's are relative it is to the job's working directory.</p></dd><dt class="param">expectedReader</dt><dd class="cmt"><p>reads records from the expectedPath.</p></dd><dt class="param">expectedPath</dt><dd class="cmt"><p>path that points to the root directory of the reference data. If path is relative it is to the
        job's working directory.
 </p></dd></dl></div>
+    </li><li name="org.specs2.matcher.MatchResultStackTrace#setStacktrace" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setStacktrace[T&lt;:&lt;?&gt;](m:&lt;?&gt;):org.specs2.matcher.MatchResult[T]"></a>
+      <a id="setStacktrace[T](MatchResult[T]):MatchResult[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setStacktrace</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="m">m: <span class="extype" name="org.specs2.matcher.MatchResult">MatchResult</span>[<span class="extype" name="org.specs2.matcher.MatchResultStackTrace.setStacktrace.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="org.specs2.matcher.MatchResult">MatchResult</span>[<span class="extype" name="org.specs2.matcher.MatchResultStackTrace.setStacktrace.T">T</span>]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd>MatchResultStackTrace</dd></dl></div>
     </li><li name="org.specs2.matcher.ThrownExpectations#skipped" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="skipped(s:org.specs2.execute.Skipped):org.specs2.execute.Skipped"></a>
       <a id="skipped(Skipped):Skipped"></a>
@@ -1071,6 +1084,8 @@ same and the records loaded from each subdirectory must be the same.
               <h3>Inherited from <span class="extype" name="org.specs2.execute.StandardResults">StandardResults</span></h3>
             </div><div class="parent" name="org.specs2.matcher.Expectations">
               <h3>Inherited from <span class="extype" name="org.specs2.matcher.Expectations">Expectations</span></h3>
+            </div><div class="parent" name="org.specs2.matcher.MatchResultStackTrace">
+              <h3>Inherited from <span class="extype" name="org.specs2.matcher.MatchResultStackTrace">MatchResultStackTrace</span></h3>
             </div><div class="parent" name="org.specs2.matcher.CanBeEqual">
               <h3>Inherited from <span class="extype" name="org.specs2.matcher.CanBeEqual">CanBeEqual</span></h3>
             </div><div class="parent" name="scala.AnyRef">
