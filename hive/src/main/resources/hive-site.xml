@@ -25,15 +25,19 @@
     <value>true</value>
   </property>
   <property>
-      <name>hive.exec.dynamic.partition.mode</name>
-      <value>nonstrict</value>
+    <name>hive.exec.dynamic.partition.mode</name>
+    <value>nonstrict</value>
   </property>
   <property>
-      <name>mapreduce.framework.name</name>
-      <value>yarn</value>
+    <name>mapreduce.framework.name</name>
+    <value>yarn</value>
   </property>
   <property>
-      <name>hive.metastore.ds.retry.attempts</name>
-      <value>0</value>
+    <name>hive.metastore.ds.retry.attempts</name>
+    <value>0</value>
+  </property>
+  <property>
+    <name>datanucleus.autoStartMechanism</name>
+    <value>SchemaTable</value>
   </property>
 </configuration>
