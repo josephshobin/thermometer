@@ -22,6 +22,8 @@ import com.twitter.scalding._
 
 import org.apache.hadoop.mapred.JobConf
 
+import org.apache.log4j.LogManager
+
 import org.specs2.Specification
 import org.specs2.execute.{Result, Success => SpecsSuccess, Failure => SpecsFailure, FailureException}
 import org.specs2.execute.StandardResults.success
@@ -33,11 +35,12 @@ import au.com.cba.omnia.thermometer.fact.Fact
 trait ExecutionSupport extends FieldConversions with HadoopSupport { self: Specification =>
   /** Executes the provided execution with an optional map of arguments. */
   def execute[T](execution: Execution[T], args: Map[String, List[String]] = Map.empty): Try[T] = {
-    println("")
-    println("")
-    println(s"============================   Running execution test with work directory <$dir>  ============================")
-    println("")
-    println("")
+    val log = LogManager.getLogger(getClass)
+    log.info("")
+    log.info("")
+    log.info(s"============================   Running execution test with work directory <$dir>  ============================")
+    log.info("")
+    log.info("")
 
     val mode   = Hdfs(false, jobConf)
     val a      = Mode.putMode(mode, new Args(args + (("hdfs", List.empty))))

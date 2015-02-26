@@ -176,6 +176,12 @@ Mix in the `HiveSupport` trait in `import au.com.cba.omnia.thermometer.hive.Hive
 support for hive and, in particular, set up a separate warehouse directory and metadata database per
 test and provide the right `HiveConf`.
 
+log verbosity
+-------------
+
+The verbosity of the logging messages from Thermometer and Hadoop can be configured by adding a
+`log4j.properties` file. Please find an example in
+[core/src/main/resources/log4j.properties](core/src/main/resources/log4j.properties).
 
 ongoing work
 ------------

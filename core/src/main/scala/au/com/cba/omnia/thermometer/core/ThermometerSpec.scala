@@ -23,6 +23,8 @@ import com.twitter.scalding.{Job, TypedPipe, Args}
 
 import org.apache.commons.io.FileUtils
 
+import org.apache.log4j.LogManager
+
 import org.apache.hadoop.fs.{FileSystem, Path}
 
 import org.specs2._
@@ -89,11 +91,12 @@ abstract class ThermometerSpec extends Specification
     def run:Option[scalaz.\/[String,Throwable]]
     
     def runsOk: Result = {
-      println("")
-      println("")
-      println(s"============================   Running test with work directory <$dir>  ============================")
-      println("")
-      println("")
+      val log = LogManager.getLogger(getClass)
+      log.info("")
+      log.info("")
+      log.info(s"============================   Running test with work directory <$dir>  ============================")
+      log.info("")
+      log.info("")
 
       run match {
         case None =>
