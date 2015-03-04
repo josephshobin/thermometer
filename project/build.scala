@@ -22,6 +22,7 @@ object build extends Build {
   lazy val standardSettings =
     Defaults.coreDefaultSettings ++
     uniformDependencySettings ++
+    strictDependencySettings ++
     uniform.docSettings("https://github.com/CommBank/thermometer") ++ Seq(
       parallelExecution in Test := false,
       updateOptions := updateOptions.value.withCachedResolution(true)
